@@ -1,5 +1,7 @@
 package ru.sky.pro.lesson1_9;
 
+import java.util.Objects;
+
 public class Book {
     public int yearBook;
     private final String title;
@@ -27,5 +29,23 @@ public class Book {
         this.yearBook = yearBook;
     }
 
+    @Override
+    public String toString() {
+        return this.autor + ", " + this.title + ", " + this.yearBook + "г.";
+    }
+
+    @Override
+    public boolean equals(Object other) {
+        if (this.getClass() != other.getClass()) {
+            return false;
+        }
+        Book b = (Book) other;
+        return Objects.equals(autor, b.autor) && Objects.equals(title, b.title) && Objects.equals(yearBook, b.yearBook);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(autor,title,yearBook);
+    }
 
 }

@@ -7,9 +7,10 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Autor rouling = new Autor("Джоан", "Роулинг");
-        Autor tolkin = new Autor("Джон", "Толкин");
-        System.out.println(rouling.getFirstName() + " " + rouling.getSecondName());
+        Autor rouling = new Autor("Джоан", "Роулинг", "001");
+        Autor tolkin = new Autor("Джон", "Толкин", "002");
+        System.out.println(rouling);
+        System.out.println(tolkin);
 
         Book harryPotterAndPhilosopherSStone = new Book(rouling,"Гарри Поттер и филосовский камень", 1997);
         Book theLordOfTheRings = new Book(tolkin, "Властелин колец", 1954);
