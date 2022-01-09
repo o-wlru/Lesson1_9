@@ -18,7 +18,7 @@ public class Book {
         return autor;
     }
 
-    public String getTitle(String гарри_поттер_и_филосовский_камень) {
+    public String getTitle(String гарри_поттер_и_философский_камень) {
         return this.title;
     }
     public int getYearBook() {

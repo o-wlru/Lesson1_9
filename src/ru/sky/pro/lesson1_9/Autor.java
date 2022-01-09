@@ -32,12 +32,12 @@ public class Autor {
             return false;
         }
             Autor a = (Autor) other;
-            return id.equals(a.id);
+            return id.equals(a.id) && firstName.equals(a.firstName) && secondName.equals(a.secondName);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id);
+        return Objects.hash(id, firstName, secondName);
     }
 }
 

@@ -12,7 +12,7 @@ public class Main {
         System.out.println(rouling);
         System.out.println(tolkin);
 
-        Book harryPotterAndPhilosopherSStone = new Book(rouling,"Гарри Поттер и филосовский камень", 1997);
+        Book harryPotterAndPhilosopherSStone = new Book(rouling,"Гарри Поттер и философский камень", 1997);
         Book theLordOfTheRings = new Book(tolkin, "Властелин колец", 1954);
 
         System.out.println(harryPotterAndPhilosopherSStone);
